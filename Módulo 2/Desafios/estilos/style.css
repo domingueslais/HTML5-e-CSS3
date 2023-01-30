@@ -102,7 +102,7 @@ p {
     margin: 15px 0px;
 }
 main strong {
-    color: var(--cor4);
+    color: var(--cor4); 
 }
 main a {
     background-color: var(--cor1);
