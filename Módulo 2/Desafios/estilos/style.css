@@ -83,8 +83,8 @@ main {
     border-bottom-right-radius: 10px;
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.521);
 }
-main strong {
-    color: #2fa966;
+strong {
+    color: var(--cor4);
 }
 h2 {
     color: var(--cor6);
@@ -105,7 +105,8 @@ p {
     margin: 15px 0px;
 }
 main a {
-    background-color: var(--cor2);
+    background-color: var(--cor1);
+    color: var(--cor3);
     font-weight: bold;
     text-decoration: none;
     padding: 2px ;
