@@ -18,10 +18,10 @@
 
     --fonte-padrao: Arial, Verdana, Helvetica, sans-serif;
     --fonte-destaque: 'Bebas Neue', sans-serif;
-    --fonte-android: 'android'
+    --fonte-android: 'android';
 }
 
-*{
+* {
     margin: 0px;
     padding: 0px;
 }
