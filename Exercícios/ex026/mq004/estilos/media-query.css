@@ -1,0 +1,66 @@
+@charset "UTF-8";
+
+/*TODAS AS DEMAIS MÍDIAS*/
+/*Como o site foi configurado em mobile first, 
+não é preciso fazer a configuração de pequenas telas
+novamente*/
+@media print {
+/*impressoras*/
+    * {
+        font-family: 'Courier New', Courier, monospace;
+    }
+    body {
+        background-image: url(../imagens/back-print.jpg); 
+        /*desnecessário pois não aparece para impressão */
+    }
+    main {
+        border: 2px solid black;
+    }
+    main>h1 {
+        text-shadow: none;
+        color: black;
+    }
+    img#iprint {display: block;}
+    img#iphone, img#itablet, 
+    img#ipc, img#itv {
+    display: none;
+    }
+}
+@media screen and (min-width: 768px) and (max-width: 992px) {
+/*tablet*/
+    body {
+        background-image: url(../imagens/back-tablet.jpg);
+    }
+    img#itablet {
+        display: block;
+    }
+    img#iphone, img#iprint, 
+    img#ipc, img#itv {
+    display: none;
+    }
+}
+@media screen and (min-width: 993px) and (max-width: 1200px) {
+/*pc*/
+    body {
+        background-image: url(../imagens/back-pc.jpg);
+    }
+    img#ipc {display: block;}
+    img#iphone, img#iprint, 
+    img#itablet, img#itv {
+    display: none;
+    }
+}
+@media screen and (min-width: 1201px) {
+/*grandes*/
+    body {
+        background-image: url(../imagens/back-tv.jpg);
+    }
+    main {
+        width: 700px;
+    }
+    img#itv {display: block;}
+    img#iphone, img#iprint, 
+    img#ipc, img#itablet {
+    display: none;
+    }
+}
